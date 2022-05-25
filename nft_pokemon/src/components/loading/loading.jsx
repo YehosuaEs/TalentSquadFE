@@ -7,7 +7,7 @@ function Loading () {
     return (
         <Fragment>
                 <h1>
-                    Hola
+                    HOLA
                 </h1>
         </Fragment>
     )
