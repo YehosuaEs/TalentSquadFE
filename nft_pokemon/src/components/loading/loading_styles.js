@@ -20,7 +20,7 @@ export const Wireframe = styled.div`
 export const Title = styled.div` 
     display: flex;
     align-items: center;
-    color: white;
+    color: #FFFFFF;
     //border: 1px solid black;
     font-weight: 700;
     margin-top: 0.6rem;
@@ -39,4 +39,27 @@ export const Title = styled.div`
         justify-content: flex-end;
         margin-right: 1rem;
     `}
+`;
+/* --------------------------------------------------------------------------- */
+export const CenterSection = styled.div` 
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: .5rem;
+
+    ${props => props.estilo === "arrowLeft" && ` 
+        margin: 3rem 0 0 1rem;
+    `}
+    ${props => props.estilo === "imagen" && ` 
+        flex:auto;
+        justify-content:right;
+
+    `}
+    ${props => props.estilo === "arrowRight" && ` 
+        flex: auto;
+        justify-content: flex-end;
+        margin: 3rem 1rem 0 0;
+    `}
+
 `;
