@@ -20,13 +20,23 @@ export const Wireframe = styled.div`
 export const Title = styled.div` 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     color: white;
-    font-size: 24px;
+    //border: 1px solid black;
     font-weight: 700;
-    padding-top: 0.6rem;
+    margin-top: 0.6rem;
 
+    ${props => props.estilo === "icono" && `
+        font-size: 24px;
+        margin-left:1rem;
+    `}
+    ${props => props.estilo === "titulo" && `
+        font-size: 24px;
+        margin-left: 1rem;
+    `}
     ${props => props.estilo === "number" && `
         font-size: 12px;
+        flex: auto;
+        justify-content: flex-end;
+        margin-right: 1rem;
     `}
 `;

@@ -11,8 +11,8 @@ function Loading () {
             <Cuerpo>
                 <Wireframe>
                     <Title>
-                        <Title><AiOutlineArrowLeft/></Title>
-                        <Title>Pokémon Name</Title>
+                        <Title estilo={"icono"}><AiOutlineArrowLeft/></Title>
+                        <Title estilo={"titulo"}>Pokémon Name </Title>
                         <Title estilo={"number"}>#999</Title>
                     </Title>
                 </Wireframe>
