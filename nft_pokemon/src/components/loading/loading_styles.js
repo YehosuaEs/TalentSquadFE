@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import pokemonballW from "../../icons/pokemonballW.png"
 
 export const Cuerpo = styled.div` 
     box-sizing: border-box;
@@ -6,25 +7,23 @@ export const Cuerpo = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 375px;
+    max-height: 630px;
 `;
 export const Wireframe = styled.div`
-    //position: fixed;
-    width: 360px;
-    height: 100vh; //640px
-    //left: 280px;
-    //top: 10%;
-    //margin-top:-50px ;
-    background: #B8B8B8;
+    width: 375px;
+    height:630px;
+    background: #B8B8B8 url(${pokemonballW}) no-repeat 80px -20px;
+    background-size: 260px;
     border-radius: 12px;
 `;
 export const Pokeball = styled.img` 
-    position: absolute;
-    width: 280px;
-    height: 280px;
+    position: relative;
+    border: 1px solid black;
+    width: 260px;
+    height: 260px;
     //margin-left:100px;
-    left: 6.2em;
-    top: -20px;
+    /* left: 6rem;
+    top: -20px; */
     /* White */
-    //background: #FFFFFF;
-    opacity: .1;   
+    //opacity: .1;   
 `;

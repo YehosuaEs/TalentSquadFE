@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import pokemonballW from "../../icons/pokemonballW.png"
 import { Cuerpo, Pokeball, Wireframe } from "./loading_styles";
 
 
@@ -10,8 +9,6 @@ function Loading () {
         <Fragment>
             <Cuerpo>
                 <Wireframe>
-                    <Pokeball src={pokemonballW}/>
-
                 </Wireframe>
             </Cuerpo>
         </Fragment>
