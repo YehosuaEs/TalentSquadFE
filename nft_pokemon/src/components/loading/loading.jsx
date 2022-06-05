@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Cuerpo, Wireframe, Title, CenterSection } from "./loading_styles";
+import { Cuerpo, Wireframe, Title, CenterSection, Card } from "./loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import pokemonLoading from "../../icons/pokemonLoading.png"
 
@@ -21,7 +21,10 @@ function Loading () {
                         <CenterSection estilo={"imagen"}><img src={pokemonLoading} alt="pokemon" /> </CenterSection>
                         <CenterSection estilo={"arrowRight"}><AiOutlineRight/></CenterSection>
                     </CenterSection>
-
+                    <Card>
+                        
+                    </Card>
+                   
                 </Wireframe>
             </Cuerpo>
         </Fragment>
