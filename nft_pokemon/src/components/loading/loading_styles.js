@@ -9,7 +9,7 @@ export const Cuerpo = styled.div`
     min-height: 100vh;
     display: flex;
 `;
-export const Wireframe = styled.div`
+export const Card = styled.div`
     margin: auto;
     width: 360px;
     height:630px;
@@ -68,9 +68,8 @@ export const CenterSection = styled.div`
     `}
 `;
 /* --------------------------------------------------------------------------- */
-export const Card = styled.div` 
-    display: flex;
-    flex-direction: column;
+export const CardInfo = styled.div` 
+    //display: flex;
     margin: auto;
     width: 352px;
     height: 404px;
@@ -79,4 +78,22 @@ export const Card = styled.div`
     position: relative;
     z-index: 1;
     top:-3rem;
+`;
+
+export const TypeCointaner = styled.div`
+    display: flex;
+    justify-content:center;
+`;
+
+export const Type = styled.div`
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    width: 42px;
+    height: 20px;
+    border-radius: 1rem;
+    margin: 50px 15px;
+    color: #ffffff;
+    background-color: #666666;
 `;

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Cuerpo, Wireframe, Title, CenterSection, Card } from "./loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner } from "./loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import pokemonLoading from "../../icons/pokemonLoading.png"
 
@@ -10,7 +10,7 @@ function Loading () {
     return (
         <Fragment>
             <Cuerpo>
-                <Wireframe>
+                <Card>
                     <Title>
                         <Title estilo={"icono"}><AiOutlineArrowLeft/></Title>
                         <Title estilo={"titulo"}>Pokémon Name </Title>
@@ -21,11 +21,13 @@ function Loading () {
                         <CenterSection estilo={"imagen"}><img src={pokemonLoading} alt="pokemon" /> </CenterSection>
                         <CenterSection estilo={"arrowRight"}><AiOutlineRight/></CenterSection>
                     </CenterSection>
-                    <Card>
-                        
-                    </Card>
-                   
-                </Wireframe>
+                    <CardInfo>
+                        <TypeCointaner>
+                            <Type>Type</Type>
+                            <Type>Type</Type>
+                        </TypeCointaner>
+                    </CardInfo>
+                </Card>
             </Cuerpo>
         </Fragment>
     )
