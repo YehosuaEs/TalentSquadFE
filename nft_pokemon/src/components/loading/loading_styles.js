@@ -69,7 +69,9 @@ export const CenterSection = styled.div`
 `;
 /* --------------------------------------------------------------------------- */
 export const CardInfo = styled.div` 
-    //display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     width: 352px;
     height: 404px;
@@ -83,6 +85,7 @@ export const CardInfo = styled.div`
 export const TypeCointaner = styled.div`
     display: flex;
     justify-content:center;
+
 `;
 
 export const Type = styled.div`
@@ -93,7 +96,23 @@ export const Type = styled.div`
     width: 42px;
     height: 20px;
     border-radius: 1rem;
-    margin: 50px 15px;
+    margin: 50px 15px 0px;
     color: #ffffff;
     background-color: #666666;
+`;
+
+export const CartTitles = styled.div` 
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 15px;
+    color: #888888;
+`;
+
+export const Text = styled.p` 
+    width: 312px;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: justify;
+    color: #212121;
 `;
