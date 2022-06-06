@@ -19,6 +19,7 @@ export const Card = styled.div`
     //box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
 `;
 /* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
 export const Title = styled.div` 
     display: flex;
     align-items: center;
@@ -43,6 +44,7 @@ export const Title = styled.div`
     `}
 `;
 /* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
 export const CenterSection = styled.div` 
     display: flex;
     align-items: center;
@@ -58,8 +60,6 @@ export const CenterSection = styled.div`
     ${props => props.estilo === "imagen" && ` 
         flex: auto;
         justify-content:right;
-        
-
     `}
     ${props => props.estilo === "arrowRight" && ` 
         flex: auto;
@@ -67,6 +67,7 @@ export const CenterSection = styled.div`
         margin: 3rem 1rem 0 0;
     `}
 `;
+/* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
 export const CardInfo = styled.div` 
     display: flex;
@@ -81,11 +82,10 @@ export const CardInfo = styled.div`
     z-index: 1;
     top:-3rem;
 `;
-
+/* --------------------------------------------------------------------------- */
 export const TypeCointaner = styled.div`
     display: flex;
     justify-content:center;
-
 `;
 
 export const Type = styled.div`
@@ -96,11 +96,11 @@ export const Type = styled.div`
     width: 42px;
     height: 20px;
     border-radius: 1rem;
-    margin: 50px 15px 0px;
+    margin: 50px 10px 0px;
     color: #ffffff;
     background-color: #666666;
 `;
-
+/* --------------------------------------------------------------------------- */
 export const CartTitles = styled.div` 
     font-size: 14px;
     font-weight: 700;
@@ -108,11 +108,63 @@ export const CartTitles = styled.div`
     margin-top: 15px;
     color: #888888;
 `;
+/* --------------------------------------------------------------------------- */
 
+export const Container = styled.div` 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    width: 16rem;
+`;
+
+
+export const About = styled.div`
+    margin: 10px 0;
+    font-size: 10px;
+    color:#212121;
+    
+    ${props => props.estilo === "centerDiv" && ` 
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        padding: 0px 22px 0px 22px;
+    `}
+`; 
+
+export const Info = styled.div`
+    display: flex;
+    align-items: center;
+
+    height: 1.9rem;
+
+    
+    ${props => props.estilo === "characteristic" && ` 
+        justify-content: center;
+        text-align: center;
+        height:auto;
+        font-size:8px;
+        color:#666665;
+        line-height:12px;
+    `}
+`;
+
+export const Iconos = styled.img` 
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 2px;
+    //border: 1px solid green;
+`;
+/* --------------------------------------------------------------------------- */
 export const Text = styled.p` 
     width: 312px;
     font-size: 10px;
-    line-height: 16px;
     text-align: justify;
     color: #212121;
+
 `;
+/* --------------------------------------------------------------------------- */
+export const StatsDetails = styled.div` 
+     
+`;
+
+
+
