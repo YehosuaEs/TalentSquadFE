@@ -2,6 +2,18 @@ import styled, { keyframes } from "styled-components";
 import pokemonballW from "../../icons/pokemonballW.png"
 
 
+
+export const fadeInOut = keyframes`
+    0% {
+        opacity: .8;
+        background:  #999999  url(${pokemonballW}) no-repeat 125px -20px; 
+        background-size: 260px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+`;
 /* --------------------------------------------------------------------------- */
 export const Cuerpo = styled.div` 
     box-sizing: border-box;
@@ -9,18 +21,18 @@ export const Cuerpo = styled.div`
     height: auto;
     min-height: 100vh;
     display: flex;
-`;
-const shimeEffect = keyframes` 
-`;
+    
+    `;
+/* --------------------------------------------------------------------------- */
 export const Card = styled.div`     
     margin: auto;
     width: 360px;
     height:630px;
-    background: #B8B8B8 url(${pokemonballW}) no-repeat 125px -20px;
+    background:  #B8B8B8 url(${pokemonballW}) no-repeat 125px -20px; 
     background-size: 260px;
     border-radius: 12px;   
     box-shadow: 27px 52px 81px -7px rgba(0,0,0,0.1),7px 7px 16px -3px rgba(0,0,0,0.1),0px 9px 21px -3px rgba(0,0,0,0.1);
-
+    animation: ${fadeInOut} 1.2s infinite alternate;    
 `;
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -28,7 +40,6 @@ export const Title = styled.div`
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    //border: 1px solid black;
     font-weight: 700;
     margin-top: 0.6rem;
 
@@ -91,7 +102,6 @@ export const TypeCointaner = styled.div`
     display: flex;
     justify-content:center;
 `;
-
 export const Type = styled.div`
     font-size: 10px;
     font-weight: 700;
@@ -102,7 +112,7 @@ export const Type = styled.div`
     border-radius: 1rem;
     margin: 50px 10px 0px;
     color: #ffffff;
-    background-color: #666666;
+    background-color: #666666; 
 `;
 /* --------------------------------------------------------------------------- */
 export const CartTitles = styled.div` 
@@ -113,15 +123,12 @@ export const CartTitles = styled.div`
     color: #888888;
 `;
 /* --------------------------------------------------------------------------- */
-
 export const Container = styled.div` 
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
     width: 16rem;
 `;
-
-
 export const About = styled.div`
     margin: 10px 0;
     font-size: 10px;
@@ -133,14 +140,11 @@ export const About = styled.div`
         padding: 0px 22px 0px 22px;
     `}
 `; 
-
 export const Info = styled.div`
     display: flex;
     align-items: center;
-
     height: 1.9rem;
 
-    
     ${props => props.estilo === "characteristic" && ` 
         justify-content: center;
         text-align: center;
@@ -150,12 +154,10 @@ export const Info = styled.div`
         line-height:12px;
     `}
 `;
-
 export const Iconos = styled.img` 
     width: 16px;
     vertical-align: text-bottom;
     margin-right: 2px;
-    //border: 1px solid green;
 `;
 /* --------------------------------------------------------------------------- */
 export const Text = styled.p` 
@@ -171,12 +173,10 @@ export const StatsContainer = styled.div`
     flex-direction: column;
     width: 312px;
     margin-top: 5px;
-    //border: 1px solid red;
 `;
 export const StatsDetails = styled.div` 
     display: inline-flex;
 `;
-
 export const Skills = styled.div`
     padding-right: 10px;
     line-height: 16px;
@@ -186,7 +186,6 @@ export const Skills = styled.div`
     width: 38px;
     text-align: end;
     border-right: 1px solid #e0e0e0;
-
 `;
 export const SkillsNum = styled.div` 
     padding: 0 10px;
@@ -195,7 +194,6 @@ export const SkillsNum = styled.div`
     font-size: 10px;
     color: #313131;
 `;
-
 export const SkillsBar = styled.div` 
     display: inline-flex;
     align-self: center;
@@ -204,12 +202,10 @@ export const SkillsBar = styled.div`
     width: 234px;
     border-radius: 6px;
 `;
-
 export const Progress = styled(SkillsBar)`
     background: #888888;
-    width: ${props => props.width}
+    width: ${props => props.width} 
 `;
-
 
 
 
