@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import pokemonballW from "../../icons/pokemonballW.png"
+
 
 /* --------------------------------------------------------------------------- */
 export const Cuerpo = styled.div` 
@@ -9,14 +10,17 @@ export const Cuerpo = styled.div`
     min-height: 100vh;
     display: flex;
 `;
-export const Card = styled.div`
+const shimeEffect = keyframes` 
+`;
+export const Card = styled.div`     
     margin: auto;
     width: 360px;
     height:630px;
     background: #B8B8B8 url(${pokemonballW}) no-repeat 125px -20px;
     background-size: 260px;
-    border-radius: 12px;
-    //box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+    border-radius: 12px;   
+    box-shadow: 27px 52px 81px -7px rgba(0,0,0,0.1),7px 7px 16px -3px rgba(0,0,0,0.1),0px 9px 21px -3px rgba(0,0,0,0.1);
+
 `;
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -191,21 +195,19 @@ export const SkillsNum = styled.div`
     font-size: 10px;
     color: #313131;
 `;
+
 export const SkillsBar = styled.div` 
-    display: flex;
+    display: inline-flex;
     align-self: center;
+    background: #eeeeee;
+    height: 5px;
+    width: 234px;
+    border-radius: 6px;
+`;
 
-    progress[value] {
-        width: 234px;
-        height: 10px;
-
-        ::-webkit-progress-bar{
-            background-color: red;
-        }
-        ::-webkit-progress-value{
-            background-color: red;
-        }
-    }
+export const Progress = styled(SkillsBar)`
+    background: #888888;
+    width: ${props => props.width}
 `;
 
 
