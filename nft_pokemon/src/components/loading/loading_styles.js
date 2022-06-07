@@ -105,7 +105,7 @@ export const CartTitles = styled.div`
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
-    margin-top: 15px;
+    margin: 15px 0 10px;
     color: #888888;
 `;
 /* --------------------------------------------------------------------------- */
@@ -159,12 +159,55 @@ export const Text = styled.p`
     font-size: 10px;
     text-align: justify;
     color: #212121;
-
+    margin-bottom: 0px;
 `;
 /* --------------------------------------------------------------------------- */
-export const StatsDetails = styled.div` 
-     
+export const StatsContainer = styled.div` 
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    margin-top: 5px;
+    //border: 1px solid red;
 `;
+export const StatsDetails = styled.div` 
+    display: inline-flex;
+`;
+
+export const Skills = styled.div`
+    padding-right: 10px;
+    line-height: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #999999;
+    width: 38px;
+    text-align: end;
+    border-right: 1px solid #e0e0e0;
+
+`;
+export const SkillsNum = styled.div` 
+    padding: 0 10px;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 10px;
+    color: #313131;
+`;
+export const SkillsBar = styled.div` 
+    display: flex;
+    align-self: center;
+
+    progress[value] {
+        width: 234px;
+        height: 10px;
+
+        ::-webkit-progress-bar{
+            background-color: red;
+        }
+        ::-webkit-progress-value{
+            background-color: red;
+        }
+    }
+`;
+
 
 
 
