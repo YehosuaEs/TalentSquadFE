@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import pokemonballW from "../../icons/pokemonballW.png"
-
-
+import pokemonballW from "../icons/pokemonballW.png"
 
 export const fadeInOut = keyframes`
     0% {
@@ -9,7 +7,6 @@ export const fadeInOut = keyframes`
         background:  #999999  url(${pokemonballW}) no-repeat 125px -20px; 
         background-size: 260px;
     }
-
     100% {
         opacity: 1;
     }
@@ -21,8 +18,7 @@ export const Cuerpo = styled.div`
     height: auto;
     min-height: 100vh;
     display: flex;
-    
-    `;
+`;
 /* --------------------------------------------------------------------------- */
 export const Card = styled.div`     
     margin: auto;
@@ -31,7 +27,7 @@ export const Card = styled.div`
     background:  #B8B8B8 url(${pokemonballW}) no-repeat 125px -20px; 
     background-size: 260px;
     border-radius: 12px;   
-    box-shadow: 27px 52px 81px -7px rgba(0,0,0,0.1),7px 7px 16px -3px rgba(0,0,0,0.1),0px 9px 21px -3px rgba(0,0,0,0.1);
+    //box-shadow: 27px 52px 81px -7px rgba(0,0,0,0.1),7px 7px 16px -3px rgba(0,0,0,0.1),0px 9px 21px -3px rgba(0,0,0,0.1);
     animation: ${fadeInOut} 1.2s infinite alternate;    
 `;
 /* --------------------------------------------------------------------------- */
@@ -71,6 +67,7 @@ export const CenterSection = styled.div`
 
     ${props => props.estilo === "arrowLeft" && ` 
         margin: 3rem 0 0 1rem;
+        cursor: pointer;
     `}
     ${props => props.estilo === "imagen" && ` 
         flex: auto;
@@ -80,6 +77,7 @@ export const CenterSection = styled.div`
         flex: auto;
         justify-content: flex-end;
         margin: 3rem 1rem 0 0;
+        cursor: pointer;
     `}
 `;
 /* --------------------------------------------------------------------------- */
