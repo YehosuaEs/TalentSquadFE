@@ -137,12 +137,12 @@ export const CartTitles = styled.div`
 export const Container = styled.div` 
     box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 16rem;
 
     ${props => props.estilo === "HtWtMo" &&`
         justify-content: space-around;
-        margin: -20px 0 0 10px;
+        margin-top: -20px;
     `}
 `;
 export const About = styled.div`
@@ -153,7 +153,7 @@ export const About = styled.div`
     ${props => props.estilo === "centerDiv" && ` 
         border-left: 1px solid #000;
         border-right: 1px solid #000;
-        padding: 0px 22px 0px 22px;
+        padding: 0px 25px 0px 25px;
     `}
 `; 
 export const Info = styled.div`
@@ -173,7 +173,6 @@ export const Info = styled.div`
     `}
     ${props => props.estilo === "ability" && ` 
         height:auto;
-
     `}
 `;
 export const Iconos = styled.img` 
@@ -188,6 +187,10 @@ export const Text = styled.p`
     text-align: justify;
     color: #212121;
     margin-bottom: 0px;
+    text-transform: lowercase;
+    &:first-letter {
+        text-transform: capitalize;
+    }
 `;
 /* --------------------------------------------------------------------------- */
 export const StatsContainer = styled.div` 

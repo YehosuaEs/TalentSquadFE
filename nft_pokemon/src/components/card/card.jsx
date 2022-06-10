@@ -10,7 +10,7 @@ import pokemonLoading from"../../icons/pokemonLoading.png"
 
 function PokemonCard (){
 const [loading, setLoading] = useState(false);
-const [dataPoke, setDataPoke] = useState({});
+const [dataPoke, setDataPoke] = useState([]);
 const [num, setNum] = useState(1);//::::::://
 const [pokeNum, setPokeNum] = useState (1)
 
@@ -34,11 +34,12 @@ useEffect(() => {
         await axios.get(url)
         //.then(response => {setData(response.data); console.log(response.data)})
         .then(response => {const data = response.data;
-            const pokemonpaka = {
+            //const pokemonpaka = data;
+           /*  const pokemonpaka = {
                 img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`,
                 names: data.name,
                 type1: data.types[0].type.name,
-                type2: data.types[1].type.name,
+                type2: data.types[1].type.name, 
                 wt: data.weight,
                 ht: data.height,
                 ability1: data.abilities[0].ability.name,
@@ -49,16 +50,18 @@ useEffect(() => {
                 spAtk: data.stats[3].base_stat,
                 spDef: data.stats[4].base_stat,
                 spd: data.stats[5].base_stat
-            }
-           setDataPoke(pokemonpaka)
+            } */
+           //setDataPoke(pokemonpaka)
+           setDataPoke(data)
         })
         .catch (error => {console.log(error); setLoading(true);})
         .finally(() => {setLoading(false)})
     }
     PokemonData();
+  
 }, [url])  
-
-//console.log("esta es la dataPoke", dataPoke)
+//console.log(dataPoke)
+//console.log(data)
 /* -------------------------------------------------- */
 
     return(

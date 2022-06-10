@@ -9,11 +9,8 @@ function App() {
   return (
    <>
       {/* <Loading/>  */}
-  <p>Card1</p>
-    <PokemonCard/>
-    <p>Card2</p>
-    <PokemonCard2/>  
-    
+    {/* <PokemonCard/>  */}   
+    <PokemonCard2/>    
    </>
   )
 }
