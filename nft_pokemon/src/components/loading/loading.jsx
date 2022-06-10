@@ -33,17 +33,26 @@ function Loading () {
                         <Container>
                             <About>
                                 <Info> <Iconos src={weightIcon}/> <div>9,9 kg</div> </Info>
-                                <Info estilo={"characteristic"}>Weight</Info>
                              </About>
                             <About estilo={"centerDiv"}>
                                 <Info><Iconos src={rulerIcon}/> <div>9,9 kg</div> </Info>
-                                <Info estilo={"characteristic"}>Heigth</Info>
                             </About>
                             <About> 
-                                <Info>Ability 1 <br />Ability 2</Info>
-                                <Info estilo={"characteristic"}>Moves</Info>
+                                <Info estilo={"ability"}>Ability </Info>
+                                <Info estilo={"ability"}>Ability </Info>
                             </About>
                         </Container>
+                        <Container estilo="HtWtMo">
+                            <About>
+                                <Info estilo={"characteristic"}>Weight</Info>
+                            </About>
+                            <About>
+                                <Info estilo={"characteristic"}>Heigth</Info>
+                            </About>
+                            <About>
+                                <Info estilo={"characteristic"}>Moves</Info>
+                            </About>
+                        </Container>    
                         <Text>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Molestiae ea nobis soluta cupiditate illo aliquid, ipsam pariatur.

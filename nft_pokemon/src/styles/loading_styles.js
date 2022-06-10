@@ -18,6 +18,7 @@ export const Cuerpo = styled.div`
     height: auto;
     min-height: 100vh;
     display: flex;
+
 `;
 /* --------------------------------------------------------------------------- */
 export const Card = styled.div`     
@@ -29,6 +30,10 @@ export const Card = styled.div`
     border-radius: 12px;   
     //box-shadow: 27px 52px 81px -7px rgba(0,0,0,0.1),7px 7px 16px -3px rgba(0,0,0,0.1),0px 9px 21px -3px rgba(0,0,0,0.1);
     animation: ${fadeInOut} 1.2s infinite alternate;    
+
+    ${props => props.estilo === "cardNotLoading" && `
+        animation: normal;
+    `}
 `;
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -38,6 +43,8 @@ export const Title = styled.div`
     color: #FFFFFF;
     font-weight: 700;
     margin-top: 0.6rem;
+    //background-color: red;
+   
 
     ${props => props.estilo === "icono" && `
         font-size: 24px;
@@ -46,6 +53,8 @@ export const Title = styled.div`
     ${props => props.estilo === "titulo" && `
         font-size: 24px;
         margin-left: 1rem;
+        height: 36px;  //I did this so the div behind doesn't move
+        text-transform: capitalize;
     `}
     ${props => props.estilo === "number" && `
         font-size: 12px;
@@ -62,8 +71,7 @@ export const CenterSection = styled.div`
     color: #FFFFFF;
     font-size: 22px;
     margin-top: .5rem;
-    position: relative;
-    z-index: 2;
+    //background-color: green;
 
     ${props => props.estilo === "arrowLeft" && ` 
         margin: 3rem 0 0 1rem;
@@ -72,6 +80,8 @@ export const CenterSection = styled.div`
     ${props => props.estilo === "imagen" && ` 
         flex: auto;
         justify-content:right;
+        position: relative;
+        z-index: 2;
     `}
     ${props => props.estilo === "arrowRight" && ` 
         flex: auto;
@@ -100,17 +110,20 @@ export const TypeCointaner = styled.div`
     display: flex;
     justify-content:center;
 `;
-export const Type = styled.div`
+export const Type = styled.button`
     font-size: 10px;
     font-weight: 700;
-    line-height: 20px;
     text-align: center;
-    width: 42px;
+    min-width: 42px;
     height: 20px;
     border-radius: 1rem;
     margin: 50px 10px 0px;
+    padding: 0px 15px;
     color: #ffffff;
     background-color: #666666; 
+    border: none;
+    text-transform: capitalize;
+
 `;
 /* --------------------------------------------------------------------------- */
 export const CartTitles = styled.div` 
@@ -126,6 +139,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
     width: 16rem;
+
+    ${props => props.estilo === "HtWtMo" &&`
+        justify-content: space-around;
+        margin: -20px 0 0 10px;
+    `}
 `;
 export const About = styled.div`
     margin: 10px 0;
@@ -142,6 +160,7 @@ export const Info = styled.div`
     display: flex;
     align-items: center;
     height: 1.9rem;
+    text-transform: capitalize;
 
     ${props => props.estilo === "characteristic" && ` 
         justify-content: center;
@@ -150,6 +169,11 @@ export const Info = styled.div`
         font-size:8px;
         color:#666665;
         line-height:12px;
+
+    `}
+    ${props => props.estilo === "ability" && ` 
+        height:auto;
+
     `}
 `;
 export const Iconos = styled.img` 
@@ -191,6 +215,7 @@ export const SkillsNum = styled.div`
     line-height: 16px;
     font-size: 10px;
     color: #313131;
+
 `;
 export const SkillsBar = styled.div` 
     display: inline-flex;
