@@ -99,11 +99,19 @@ export const CardInfo = styled.div`
     margin: auto;
     width: 352px;
     height: 404px;
+    //height: 223px;
     border-radius: 8px;
     background: #ffffff;
     position: relative;
     z-index: 1;
     top:-3rem;
+
+    ${props => props.estilo === "bars" && `
+        flex-direction: row;
+        border: 1px solid red;
+        height:auto;
+
+    `}
 `;
 /* --------------------------------------------------------------------------- */
 export const TypeCointaner = styled.div`
@@ -194,13 +202,19 @@ export const Text = styled.p`
 `;
 /* --------------------------------------------------------------------------- */
 export const StatsContainer = styled.div` 
-    display: flex;
+   /*  display: flex;
     flex-direction: column;
-    width: 312px;
-    margin-top: 5px;
+    width: 312px;*/
+    margin-top: 5px; 
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+    //border: 1px solid red;
+    height:auto;
 `;
 export const StatsDetails = styled.div` 
-    display: inline-flex;
+    display: flex;
+    height: 16px;
 `;
 export const Skills = styled.div`
     padding-right: 10px;
@@ -218,20 +232,39 @@ export const SkillsNum = styled.div`
     line-height: 16px;
     font-size: 10px;
     color: #313131;
+`;
 
-`;
-export const SkillsBar = styled.div` 
-    display: inline-flex;
-    align-self: center;
-    background: #eeeeee;
-    height: 5px;
-    width: 234px;
-    border-radius: 6px;
-`;
-export const Progress = styled(SkillsBar)`
-    background: #888888;
-    width: ${props => props.width} 
-`;
+export const DivProgress = styled.div` 
+    display: flex;
+    align-items:center;
+
+    progress {
+        margin-left: 5px;
+        border: 0;
+        height:10px;
+        width:238px;
+        border-radius: 20px;
+    }
+    progress::-webkit-progress-bar {
+        margin-top: 2px;
+        border: 0;
+        height: 4px;
+        border-radius: 20px;
+        background-color: rgba(184, 184, 184, .2);
+    }
+    progress::-webkit-progress-value {
+        border: 0;
+        height: 4px;
+        border-radius: 20px;
+        background-color: rgba(184, 184, 184, 1);
+    }
+    progress::-moz-progress-bar {
+        border: 0;
+        height: 4px;
+        border-radius: 20px;
+    }
+`; 
+
 
 
 

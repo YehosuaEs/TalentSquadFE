@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../loading/loading";
-import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, SkillsBar, StatsDetails, Progress } from "../../styles/loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info/* , Skills, SkillsNum, SkillsBar, StatsDetails, Progress  */} from "../../styles/loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"
@@ -110,7 +110,7 @@ useEffect(() => {
                             Molestiae ea nobis soluta cupiditate illo aliquid, ipsam pariatur.
                         </Text>
                         <CartTitles> Base Stats </CartTitles>
-                        <StatsContainer>
+                        {/* <StatsContainer>
                             <StatsDetails>
                                 <Skills>HP</Skills>
                                 <SkillsNum >{dataPoke.hp}</SkillsNum>
@@ -138,11 +138,10 @@ useEffect(() => {
                             </StatsDetails> 
                             <StatsDetails>
                                 <Skills>SPD</Skills>
-                                {/* <SkillsNum >{dataPoke.spd}</SkillsNum> */}
                                 <SkillsNum >{dataPoke.spd}</SkillsNum>
                                 <SkillsBar><Progress value="45" max="300" width={"45%"}/></SkillsBar>
                             </StatsDetails> 
-                        </StatsContainer>
+                        </StatsContainer> */}
                     </CardInfo>
                 </Card>
             </Cuerpo>    

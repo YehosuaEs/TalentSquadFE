@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, SkillsBar, StatsDetails, Progress } from "../../styles/loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress } from "../../styles/loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"
@@ -58,7 +58,7 @@ function Loading () {
                             Molestiae ea nobis soluta cupiditate illo aliquid, ipsam pariatur.
                         </Text>
                         <CartTitles> Base Stats </CartTitles>
-                        <StatsContainer>
+                        {/* <StatsContainer>
                             <StatsDetails>
                                 <Skills>HP</Skills>
                                 <SkillsNum >045</SkillsNum>
@@ -89,7 +89,44 @@ function Loading () {
                                 <SkillsNum >049</SkillsNum>
                                 <SkillsBar><Progress value="45" max="300" width={"45%"}/></SkillsBar>
                             </StatsDetails> 
-                        </StatsContainer>
+                        </StatsContainer> */}
+                        <StatsContainer>
+                                <div>
+                                    <Skills>HP</Skills>
+                                    <Skills>ATK</Skills>
+                                    <Skills>DEF</Skills>
+                                    <Skills>SATK</Skills>
+                                    <Skills>SDEF</Skills>
+                                    <Skills>SPD</Skills>
+                                </div>
+                                <div>
+                                    <StatsDetails>
+                                        <SkillsNum >045</SkillsNum>
+                                        <DivProgress><progress value={"45"} max="200"> </progress> </DivProgress>
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        <SkillsNum >049</SkillsNum>
+                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        <SkillsNum >049</SkillsNum>
+                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        <SkillsNum >065</SkillsNum>
+                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        <SkillsNum >065</SkillsNum>
+                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        <SkillsNum >045</SkillsNum>     
+                                        <DivProgress><progress value={"45"} max="200"></progress>   </DivProgress>
+                                    </StatsDetails>
+                                </div>
+
+                            </StatsContainer>
                     </CardInfo>
                 </Card>
             </Cuerpo>
