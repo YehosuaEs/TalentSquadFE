@@ -5,11 +5,12 @@ import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, Cart
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"
+import addZerosStart from "./addZeros";
 
-function PokemonCard2 (){
+function PokemonCard2() {
     const [loading, setLoading] = useState(false);
-    const [num, setNum] = useState(1);//::::::://
-    const [pokeNum, setPokeNum] = useState (1)
+    const [num, setNum] = useState(1);
+    const [pokeNum, setPokeNum] = useState (1);
     const [infoPoke, setInfoPoke] = useState([]);
     const [imgPoke, setImgPoke] = useState();
     const [pokeTypes, setPokeTypes] = useState([]);
@@ -76,18 +77,19 @@ function PokemonCard2 (){
             .finally(() => {setLoading(false)})
         }
         GetDataTx()
-        TextPokemon(); //I add this inside the useEffect to prevent infinite Loop.
+        TextPokemon(); 
     }, [urlText, num]);
 
     let [textoPokemon, setTextoPokemon] = useState();
     function TextPokemon () {
-             pokeText.filter((item) => { 
-                 if (item.language.name === "en"){
-                    setTextoPokemon(item.flavor_text);
-                 }
-                 
-            })
+        pokeText.filter((item) => { 
+            if (item.language.name === "en"){
+            setTextoPokemon(item.flavor_text);
+            }
+                
+        })
     };
+
     /* -------------------------------------------------- */                   
     return(
         <Fragment>
@@ -99,7 +101,7 @@ function PokemonCard2 (){
                         <Title>
                             <Title estilo={"icono"}><AiOutlineArrowLeft/></Title>
                             <Title estilo={"titulo"}>{infoPoke.name} </Title>
-                            <Title estilo={"number"}>#{pokeNum}</Title>
+                            <Title estilo={"number"}>#{addZerosStart(pokeNum, 3)}</Title>
                         </Title>
                         <CenterSection>
                             <CenterSection estilo={"arrowLeft"}> <span onClick={Backward}><AiOutlineLeft/></span></CenterSection>   
@@ -145,27 +147,27 @@ function PokemonCard2 (){
                                 </div>
                                 <div>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.hp}</SkillsNum>
+                                        <SkillsNum >{addZerosStart(pokeStats.hp, 3)}</SkillsNum>
                                         <DivProgress><progress value={pokeStats.hp} max="200"> </progress> </DivProgress>
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.atk}</SkillsNum>
+                                        <SkillsNum >{addZerosStart(pokeStats.atk, 3)}</SkillsNum>
                                         <DivProgress><progress value={pokeStats.atk} max="200"></progress> </DivProgress>
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.def}</SkillsNum>
+                                        <SkillsNum >{addZerosStart(pokeStats.def, 3)}</SkillsNum>
                                         <DivProgress><progress value={pokeStats.def} max="200"></progress> </DivProgress>
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.spAtk}</SkillsNum>
+                                        <SkillsNum >{addZerosStart(pokeStats.spAtk, 3)}</SkillsNum>
                                         <DivProgress><progress value={pokeStats.spAtk} max="200"></progress> </DivProgress>
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.spDef}</SkillsNum>
+                                        <SkillsNum >{addZerosStart(pokeStats.spDef, 3)}</SkillsNum>
                                         <DivProgress><progress value={pokeStats.spDef} max="200"></progress> </DivProgress>
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{pokeStats.spd}</SkillsNum>     
+                                        <SkillsNum >{addZerosStart(pokeStats.spd, 3)}</SkillsNum>     
                                         <DivProgress><progress value={pokeStats.spd} max="200"></progress>   </DivProgress>
                                     </StatsDetails>
                                 </div>
