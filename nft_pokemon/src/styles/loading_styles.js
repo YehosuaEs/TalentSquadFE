@@ -18,7 +18,6 @@ export const Cuerpo = styled.div`
     height: auto;
     min-height: 100vh;
     display: flex;
-
 `;
 /* --------------------------------------------------------------------------- */
 export const Card = styled.div`     
@@ -43,8 +42,6 @@ export const Title = styled.div`
     color: #FFFFFF;
     font-weight: 700;
     margin-top: 0.6rem;
-    //background-color: red;
-   
 
     ${props => props.estilo === "icono" && `
         font-size: 24px;
@@ -71,7 +68,6 @@ export const CenterSection = styled.div`
     color: #FFFFFF;
     font-size: 22px;
     margin-top: .5rem;
-    //background-color: green;
 
     ${props => props.estilo === "arrowLeft" && ` 
         margin: 3rem 0 0 1rem;
@@ -110,7 +106,6 @@ export const CardInfo = styled.div`
         flex-direction: row;
         border: 1px solid red;
         height:auto;
-
     `}
 `;
 /* --------------------------------------------------------------------------- */
@@ -131,7 +126,6 @@ export const Type = styled.button`
     background-color: #666666; 
     border: none;
     text-transform: capitalize;
-
 `;
 /* --------------------------------------------------------------------------- */
 export const CartTitles = styled.div` 
@@ -177,7 +171,6 @@ export const Info = styled.div`
         font-size:8px;
         color:#666665;
         line-height:12px;
-
     `}
     ${props => props.estilo === "ability" && ` 
         height:auto;
@@ -202,18 +195,15 @@ export const Text = styled.p`
 `;
 /* --------------------------------------------------------------------------- */
 export const StatsContainer = styled.div` 
-   /*  display: flex;
-    flex-direction: column;
-    width: 312px;*/
     margin-top: 5px; 
     display: flex;
     flex-direction: row;
     padding: 0 15px;
-    //border: 1px solid red;
     height:auto;
 `;
 export const StatsDetails = styled.div` 
     display: flex;
+    flex-direction: column;
     height: 16px;
 `;
 export const Skills = styled.div`
@@ -233,7 +223,9 @@ export const SkillsNum = styled.div`
     font-size: 10px;
     color: #313131;
 `;
-
+export const DivStastDetailsProgress = styled.div` 
+    margin-top: 4px;
+`;
 export const DivProgress = styled.div` 
     display: flex;
     align-items:center;
@@ -241,7 +233,7 @@ export const DivProgress = styled.div`
     progress {
         margin-left: 5px;
         border: 0;
-        height:10px;
+        height:16px;
         width:238px;
         border-radius: 20px;
     }

@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../loading/loading";
-import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress } from "../../styles/loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress, DivStastDetailsProgress } from "../../styles/loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"
@@ -85,8 +85,7 @@ function PokemonCard2() {
         pokeText.filter((item) => { 
             if (item.language.name === "en"){
             setTextoPokemon(item.flavor_text);
-            }
-                
+            } 
         })
     };
 
@@ -148,29 +147,41 @@ function PokemonCard2() {
                                 <div>
                                     <StatsDetails>
                                         <SkillsNum >{addZerosStart(pokeStats.hp, 3)}</SkillsNum>
-                                        <DivProgress><progress value={pokeStats.hp} max="200"> </progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >{addZerosStart(pokeStats.atk, 3)}</SkillsNum>
-                                        <DivProgress><progress value={pokeStats.atk} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >{addZerosStart(pokeStats.def, 3)}</SkillsNum>
-                                        <DivProgress><progress value={pokeStats.def} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >{addZerosStart(pokeStats.spAtk, 3)}</SkillsNum>
-                                        <DivProgress><progress value={pokeStats.spAtk} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >{addZerosStart(pokeStats.spDef, 3)}</SkillsNum>
-                                        <DivProgress><progress value={pokeStats.spDef} max="200"></progress> </DivProgress>
+                                        <SkillsNum >{addZerosStart(pokeStats.spd, 3)}</SkillsNum>
+                                       {/*  <DivProgress><progress value={pokeStats.hp} max="200"> </progress> </DivProgress> */}
                                     </StatsDetails>
                                     <StatsDetails>
-                                        <SkillsNum >{addZerosStart(pokeStats.spd, 3)}</SkillsNum>     
-                                        <DivProgress><progress value={pokeStats.spd} max="200"></progress>   </DivProgress>
+                                       {/*  <DivProgress><progress value={pokeStats.atk} max="200"></progress> </DivProgress> */}
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                       {/*  <DivProgress><progress value={pokeStats.def} max="200"></progress> </DivProgress> */}
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                       {/*  <DivProgress><progress value={pokeStats.spAtk} max="200"></progress> </DivProgress> */}
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                        
+                                       {/*  <DivProgress><progress value={pokeStats.spDef} max="200"></progress> </DivProgress> */}
+                                    </StatsDetails>
+                                    <StatsDetails>
+                                             
+                                        {/* <DivProgress><progress value={pokeStats.spd} max="200"></progress>   </DivProgress> */}
                                     </StatsDetails>
                                 </div>
+                                <DivStastDetailsProgress>
+                                    <StatsDetails>
+                                        <DivProgress><progress value={pokeStats.hp} max="200"> </progress> </DivProgress>
+                                        <DivProgress><progress value={pokeStats.atk} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={pokeStats.def} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={pokeStats.spAtk} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={pokeStats.spDef} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={pokeStats.spd} max="200"></progress>   </DivProgress>
+                                    </StatsDetails>
+                                </DivStastDetailsProgress>
 
                             </StatsContainer>
                         </CardInfo>
