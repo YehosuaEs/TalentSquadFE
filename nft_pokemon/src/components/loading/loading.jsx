@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress } from "../../styles/loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress, DivStastDetailsProgress } from "../../styles/loading_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"
@@ -58,38 +58,6 @@ function Loading () {
                             Molestiae ea nobis soluta cupiditate illo aliquid, ipsam pariatur.
                         </Text>
                         <CartTitles> Base Stats </CartTitles>
-                        {/* <StatsContainer>
-                            <StatsDetails>
-                                <Skills>HP</Skills>
-                                <SkillsNum >045</SkillsNum>
-                                <SkillsBar><Progress  value="45" max="300"  width={"45%"}/></SkillsBar>
-                            </StatsDetails>
-                            <StatsDetails>
-                                <Skills>ATK</Skills>
-                                <SkillsNum >049</SkillsNum>
-                                <SkillsBar><Progress value="49" max="300" width={"49%"}/></SkillsBar>
-                            </StatsDetails> 
-                            <StatsDetails>
-                                <Skills>DEF</Skills>
-                                <SkillsNum >049</SkillsNum>
-                                <SkillsBar><Progress value="49" max="300" width={"49%"}/></SkillsBar>
-                            </StatsDetails> 
-                            <StatsDetails>
-                                <Skills>SATK</Skills>
-                                <SkillsNum >049</SkillsNum>
-                                <SkillsBar><Progress value="65" max="300" width={"60%"}/></SkillsBar>
-                            </StatsDetails> 
-                            <StatsDetails>
-                                <Skills>SDEF</Skills>
-                                <SkillsNum >049</SkillsNum>
-                                <SkillsBar><Progress value="65" max="300" width={"65%"}/></SkillsBar>
-                            </StatsDetails> 
-                            <StatsDetails>
-                                <Skills>SPD</Skills>
-                                <SkillsNum >049</SkillsNum>
-                                <SkillsBar><Progress value="45" max="300" width={"45%"}/></SkillsBar>
-                            </StatsDetails> 
-                        </StatsContainer> */}
                         <StatsContainer>
                                 <div>
                                     <Skills>HP</Skills>
@@ -102,30 +70,23 @@ function Loading () {
                                 <div>
                                     <StatsDetails>
                                         <SkillsNum >045</SkillsNum>
-                                        <DivProgress><progress value={"45"} max="200"> </progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >049</SkillsNum>
-                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >049</SkillsNum>
-                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >065</SkillsNum>
-                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >065</SkillsNum>
-                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
-                                    </StatsDetails>
-                                    <StatsDetails>
                                         <SkillsNum >045</SkillsNum>     
-                                        <DivProgress><progress value={"45"} max="200"></progress>   </DivProgress>
                                     </StatsDetails>
                                 </div>
-
+                                <DivStastDetailsProgress>
+                                    <StatsDetails>
+                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={"45"} max="200"> </progress> </DivProgress>
+                                        <DivProgress><progress value={"49"} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={"65"} max="200"></progress> </DivProgress>
+                                        <DivProgress><progress value={"45"} max="200"></progress>   </DivProgress>
+                                    </StatsDetails>
+                                </DivStastDetailsProgress>
                             </StatsContainer>
                     </CardInfo>
                 </Card>

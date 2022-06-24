@@ -8,9 +8,9 @@ function App() {
 
   return (
    <>
-       {/* <Loading/>   */}
+       <Loading/>   
     {/* <PokemonCard/>  */}   
-     <PokemonCard2/>     
+     {/* <PokemonCard2/>  */}    
    </>
   )
 }
