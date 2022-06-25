@@ -19,6 +19,7 @@ export const Cuerpo = styled.div`
     height: auto;
     min-height: 100vh;
     display: flex;
+    font-family: "Poppins";
 `;
 /* --------------------------------------------------------------------------- */
 export const Card = styled.div`     
