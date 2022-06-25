@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress, DivStastDetailsProgress } from "../../styles/loading_styles";
+import { Cuerpo, Title, CenterSection, Card, CardInfo, Type, TypeCointaner, CartTitles, Text, StatsContainer, Iconos, Container, About, Info, Skills, SkillsNum, StatsDetails, DivProgress, DivStastDetailsProgress } from "../../styles/card_styles";
 import { AiOutlineArrowLeft, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import weightIcon from "../../icons/weightIcon.png"
 import rulerIcon from "../../icons/rulerIcon.png"

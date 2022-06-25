@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import pokemonballW from "../icons/pokemonballW.png"
+import pokemonballW from "../icons/pokemonballW.png";
+import Colors from "./colors";
 
 export const fadeInOut = keyframes`
     0% {
@@ -123,7 +124,7 @@ export const Type = styled.button`
     margin: 50px 10px 0px;
     padding: 0px 15px;
     color: #ffffff;
-    background-color: #666666; 
+     background-color: #666666; 
     border: none;
     text-transform: capitalize;
 `;
@@ -133,7 +134,8 @@ export const CartTitles = styled.div`
     font-weight: 700;
     line-height: 16px;
     margin: 15px 0 10px;
-    color: #888888;
+    //color: #888888;
+    color: ${props => props.estilo === "TypeColorName"  };
 `;
 /* --------------------------------------------------------------------------- */
 export const Container = styled.div` 
@@ -169,7 +171,7 @@ export const Info = styled.div`
         text-align: center;
         height:auto;
         font-size:8px;
-        color:#666665;
+        color:#666666;
         line-height:12px;
     `}
     ${props => props.estilo === "ability" && ` 
@@ -211,7 +213,7 @@ export const Skills = styled.div`
     line-height: 16px;
     font-size: 10px;
     font-weight: 700;
-    color: #999999;
+    color: #888888;
     width: 38px;
     text-align: end;
     border-right: 1px solid #e0e0e0;
@@ -221,7 +223,7 @@ export const SkillsNum = styled.div`
     font-weight: 400;
     line-height: 16px;
     font-size: 10px;
-    color: #313131;
+    color: #212121;
 `;
 export const DivStastDetailsProgress = styled.div` 
     margin-top: 4px;
@@ -242,13 +244,13 @@ export const DivProgress = styled.div`
         border: 0;
         height: 4px;
         border-radius: 20px;
-        background-color: rgba(184, 184, 184, .2);
+        background-color: rgba(136, 136, 136, .2);
     }
     progress::-webkit-progress-value {
         border: 0;
         height: 4px;
-        border-radius: 20px;
-        background-color: rgba(184, 184, 184, 1);
+        border-radius: 20px; 
+        background-color: rgba(136, 136, 136, 1); //#888888//
     }
     progress::-moz-progress-bar {
         border: 0;
