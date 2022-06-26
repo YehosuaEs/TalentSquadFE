@@ -90,7 +90,7 @@ Open http://localhost:3000 to view it in your browser.
 
 ## Code Quality
 
-I use [Sonarcloud](https://sonarcloud.io/) to verify the code, and check if there are some bugs or vulnerabilities on it.
+I used [Sonarcloud](https://sonarcloud.io/) to verify the code, and check if there are some bugs or vulnerabilities on it.
 <br />
 This an screenshoot of the project
 
