@@ -13,8 +13,6 @@ It is a challenge created by the platform
 - [ReactJs](https://es.reactjs.org/)
 - [StyleComponents](https://styled-components.com/)
 
-
-
 <h3 style="display: inline-block"> Project Files </h3>
 
 - [Pokemon Loader](https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=513%3A33)
@@ -23,13 +21,40 @@ It is a challenge created by the platform
 
 ## Usage
 
+**THe requieres task for the challenge are:**
+ 
+Display the PokeNFT in format
+ - Deskop
+ - Mobile
+
+Every Card should have
+- Pokemon image
+- Pokemon Name
+- Number in the Pokedex
+- Type
+- Basic Stats, weigth, height and characteristics
+- Description is optional
+- The color of the card can be generated randomply
+
+<div align="center">
+  <img width="180" alt="PokeCard Styled Guided" src="https://user-images.githubusercontent.com/93733677/175794994-6a0f8458-729f-4ec5-bf58-383bade6f65e.png">
+</div >
+
+
+Add a template that serves as a loader for when it has not yet been fully loaded. This loader can be generic or you can use the one found in <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=513%3A33">here</a>.
+</br></br>
+Recommend to follow the guidelines that can be found at <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742">Styles Guide</a>.
+
+
+
+
 
 
 ## Project Screen
 <p align="center">
 Here is a visual representation of how the project looks like.
 </p>
-  
+
 https://user-images.githubusercontent.com/93733677/175791655-d5b364af-d0cb-4a4c-822d-93e5bccbc9b3.mov
 
 <!-- INSTALL & SETUP -->
@@ -68,9 +93,9 @@ I use [Sonarcloud](https://sonarcloud.io/) to verify the code, and check if ther
 <br />
 This an screenshoot of the project
 
-<p align="center">
+<div align="center">
   <img width="531" alt="Captura de Pantalla 2022-06-25 a la(s) 21 23 57" src="https://user-images.githubusercontent.com/93733677/175790094-561e0618-9294-40df-8656-debff2e5d796.png">
-</p 
+</div>
  
 <!-- LICENSE -->
   
