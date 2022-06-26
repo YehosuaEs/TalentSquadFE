@@ -20,8 +20,10 @@ It is a challenge created by the platform
 - [PokeApi](https://pokeapi.co/)
 
 ## Usage
+<h4 align="center" >Here are the description of the task to develop, given by the NUWE challenges.</h4>
+</br>
 
-**THe requieres task for the challenge are:**
+**The requieres task for the challenge are:**
  
 Display the PokeNFT in format
  - Deskop
