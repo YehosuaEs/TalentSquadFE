@@ -121,12 +121,24 @@ This an screenshoot of the project
 ## Stack
 
 <div align="center">
+  <a href="https://es.reactjs.org/">
     <img width="35" alt="ReactJS" src="https://user-images.githubusercontent.com/93733677/175814537-88330de7-4e5a-425f-a933-eaf1c0bd9331.png">
+  </a>  
+  <a href="https://www.javascript.com/">
     <img width="35" alt="JavaScript" src="https://user-images.githubusercontent.com/93733677/175814736-fdc4935d-6107-4efc-a6bb-6a98dc685f80.png">
-   <img width="35" alt="HTML5" src="https://user-images.githubusercontent.com/93733677/175814924-338e3829-a7d8-4e3b-a9ff-6edf3d293a4f.png">
-  <img width="35" alt="CSS3" src="https://user-images.githubusercontent.com/93733677/175814939-9e82779a-c8a2-4fe2-999a-22ff7ffb8282.png"> 
-  <img width="35" alt="StyledComponents" src="https://user-images.githubusercontent.com/93733677/175815609-7bdf9c04-6289-412e-b1b9-485f8aca126c.png">
+  </a> 
+  <a href="https://www.javascript.com/](https://developer.mozilla.org/es/docs/Glossary/HTML5">
+    <img width="35" alt="HTML5" src="https://user-images.githubusercontent.com/93733677/175814924-338e3829-a7d8-4e3b-a9ff-6edf3d293a4f.png">
+  </a>
+  <a href="https://developer.mozilla.org/es/docs/Web/CSS">
+    <img width="35" alt="CSS3" src="https://user-images.githubusercontent.com/93733677/175814939-9e82779a-c8a2-4fe2-999a-22ff7ffb8282.png"> 
+  </a>
+  <a href="https://styled-components.com/">
+    <img width="35" alt="StyledComponents" src="https://user-images.githubusercontent.com/93733677/175815609-7bdf9c04-6289-412e-b1b9-485f8aca126c.png">
+  </a>
+  <a href="https://axios-http.com/">
    <img width="35" alt="Axios" src="https://user-images.githubusercontent.com/93733677/175815317-c22a0625-f629-4169-b2b5-c5075a57548f.png">
+  </a>
 </div>
  
 
