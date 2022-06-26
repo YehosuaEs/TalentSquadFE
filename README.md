@@ -13,17 +13,16 @@ It is a challenge created by the platform
 - [ReactJs](https://es.reactjs.org/)
 - [StyleComponents](https://styled-components.com/)
 
-<h3 style="display: inline-block"> Project Files </h3>
+<h3> Project Files </h3>
 
 - [Pokemon Loader](https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=513%3A33)
 - [Styles Guide](https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742)
 - [PokeApi](https://pokeapi.co/)
 
 ## Usage
-<h4 align="center" >Here are the description of the task to develop, given by the NUWE challenges.</h4>
-</br>
+**Here are the description of the task to develop.**
 
-**The requieres task for the challenge are:**
+**The characteristics of the car should be:**
  
 Display the PokeNFT in format
  - Deskop
@@ -43,9 +42,9 @@ Every Card should have
 </div >
 
 
-Add a template that serves as a loader for when it has not yet been fully loaded. This loader can be generic or you can use the one found in <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=513%3A33">here</a>.
+I add a template that serves as a loader for when it has not yet been fully loaded. This loader could be generic but I use the one I found <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=513%3A33">here</a>.
 </br></br>
-Recommend to follow the guidelines that can be found at <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742">Styles Guide</a>.
+The styles guidelines to build the Pokemon Card NFT, it was following the attached in the "Project Files" that you can found at <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742">Styles Guide</a>.
 
 
 
