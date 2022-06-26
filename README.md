@@ -2,7 +2,7 @@
 # Talent Squad - Frontend I 
 <h3 align="center">Pokemon Card NFT</h3>
 <p align="center">
-The idea is to create a card like a NFT using the pokeapi to generate them.
+Frontend project creating a card like a NFT using the pokeapi to generate them.
 It is a challenge created by the platform 
   <a href="https://nuwe.io/challenge/talent-squad-frontend-i">NUWE</a>
   and <a href="https://barcelonadigitaltalent.com/"> Barcelona Digital Talent</a>
@@ -113,9 +113,23 @@ I used [Sonarcloud](https://sonarcloud.io/) to verify the code, and check if the
 This an screenshoot of the project
 
 <div align="center">
-  <img width="531" alt="Captura de Pantalla 2022-06-25 a la(s) 21 23 57" src="https://user-images.githubusercontent.com/93733677/175790094-561e0618-9294-40df-8656-debff2e5d796.png">
+  <img width="531" alt="Pantalla de SonarCloud del proyecto Talentsquad FE1" src="https://user-images.githubusercontent.com/93733677/175790094-561e0618-9294-40df-8656-debff2e5d796.png">
 </div>
  
+<!-- STACK -->
+
+## Stack
+
+<div align="center">
+    <img width="35" alt="ReactJS" src="https://user-images.githubusercontent.com/93733677/175814537-88330de7-4e5a-425f-a933-eaf1c0bd9331.png">
+    <img width="35" alt="JavaScript" src="https://user-images.githubusercontent.com/93733677/175814736-fdc4935d-6107-4efc-a6bb-6a98dc685f80.png">
+   <img width="35" alt="HTML5" src="https://user-images.githubusercontent.com/93733677/175814924-338e3829-a7d8-4e3b-a9ff-6edf3d293a4f.png">
+  <img width="35" alt="CSS3" src="https://user-images.githubusercontent.com/93733677/175814939-9e82779a-c8a2-4fe2-999a-22ff7ffb8282.png"> 
+  <img width="35" alt="StyledComponents" src="https://user-images.githubusercontent.com/93733677/175815609-7bdf9c04-6289-412e-b1b9-485f8aca126c.png">
+   <img width="35" alt="Axios" src="https://user-images.githubusercontent.com/93733677/175815317-c22a0625-f629-4169-b2b5-c5075a57548f.png">
+</div>
+ 
+
 <!-- LICENSE -->
   
 ## License
