@@ -19,7 +19,12 @@ It is a challenge created by the platform
 - [Styles Guide](https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742)
 - [PokeApi](https://pokeapi.co/)
 
+<!-- USAGE -->
+
 ## Usage
+Tthe first thing after open the browser and run the project is a card loading when it is already loaded the card show the first pokemon with the index 001. 
+The colors of the card are depending the type of pokemon is. There are a couple of botton to move foward or bacwards the index of pokemons, there are 880 pokemons cards. 
+
 **Here are the description of the task to develop.**
 
 **The characteristics of the car should be:**
@@ -47,9 +52,22 @@ I add a template that serves as a loader for when it has not yet been fully load
 The styles guidelines to build the Pokemon Card NFT, it was following the attached in the "Project Files" that you can found at <a href="https://www.figma.com/file/RcduUO3jwAgkfwtK588y3N/NFTPoke?node-id=346%3A16742">Styles Guide</a>.
 
 
+<!-- COMPONENTS -->
+## Components
 
+It is divided by two folder one with the loader and other with the card
 
+### Loading
 
+The loader component is the whole card with a small animation on it, until the card component is complete.
+
+### Card 
+
+The Card component has the info about the pokemon thats shows on it, it calls the API via Axios and the answer is store in differents `const` using `useState`.
+It also have a couple of botons to go foward or backwards to display different Card Pokemon
+
+### AddZeros
+This function helps to add zeros before some section, like the pokeindex or the stats numers of the pokemon.
 
 ## Project Screen
 <p align="center">
